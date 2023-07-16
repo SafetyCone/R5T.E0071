@@ -1,6 +1,8 @@
 using System;
 using System.Linq;
+
 using R5T.T0141;
+using R5T.T0212.F000;
 
 
 namespace R5T.E0071
@@ -18,8 +20,11 @@ namespace R5T.E0071
 
 
             /// Run.
+            var documentationTarget = new NoneDocumentationTarget();
+            
             var memberDocumentationsByIdentityName = Instances.DocumentationElementOperator.Get_MemberDocumentationsByIdentityName(
-                documentationElement);
+                documentationElement,
+                documentationTarget);
 
             var lines = memberDocumentationsByIdentityName
                 .Select(pair =>
