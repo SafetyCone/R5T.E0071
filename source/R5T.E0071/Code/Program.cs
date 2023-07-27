@@ -9,8 +9,8 @@ namespace R5T.E0071
         static async Task Main()
         {
             //Experiments.Instance.XElementOfTwoNodes();
-            //Experiments.Instance.ConvertInheritdocElements();
-            await Experiments.Instance.GetAllDocumentationFilePaths();
+            Experiments.Instance.ConvertInheritdocElements();
+            //await Experiments.Instance.GetAllDocumentationFilePaths();
 
             //Demonstrations.Instance.Get_AssemblyName();
             //Demonstrations.Instance.Get_MemberDocumentationsByIdentityName();

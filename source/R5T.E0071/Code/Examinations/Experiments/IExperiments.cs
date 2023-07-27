@@ -75,7 +75,7 @@ namespace R5T.E0071
                 }
             }
 
-            var memberDocumentationsByIdentityName = Instances.MemberDocumentationOperator.Get_InitialMemberDocumentationByIdentityName();
+            var memberDocumentationsByIdentityName = Instances.MemberDocumentationOperator.Get_InitialMemberDocumentationsByIdentityName();
 
             foreach (var pair in projectDocumentationTargetsByDocumentationFilePaths)
             {
@@ -108,7 +108,7 @@ namespace R5T.E0071
         }
 
         /// <summary>
-        /// See R5T.S0082.IDocumentationCommentOperations.
+        /// See R5T.S0082.IDocumentationCommentScripts.
         /// </summary>
         public void ConvertInheritdocElements()
         {
